@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+    <link href="style.css" rel="stylesheet"></link>
+    <title>Form Registration</title>
+  </head>
+  <body>
+    <form class="container armature"  action="/register" method="POST">
+    <div >
+      <h3 class="title">Registration Form</h3>
+    </div>
+    <div class="champ">
+      <input type="text"  class ="champ_input" id="firstName" firstName="firstName" placeholder="  firstName">
+    </div>
+    <div class="champ"> 
+      <input type="text" id="lastName" class ="champ_input" lastName="lastName"  placeholder="  lastName">
+    </div>
+    <div class="champ">
+      <input type="text" id="email" class ="champ_input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="  user@domaine.com">
+    </div>
+    <div class="champ">
+      <input type="password" id="password" class ="champ_input" name="password" placeholder="  min 12 character" minlength="12" required >
+    </div>
+    <div class="champ_bottom">
+      <input type="password" id="txtConfirmPassword" class ="champ_input" placeholder="  confirm password" />
+    </div>
+    <div>
+      <input type="checkbox" id="hey" name="hey">
+      <label for="hey" class="check" > qefefqef eqef efe qefqefqefqef <br> qefefqesf qef qefefqesfqesf qeghqfe </label>
+    </div>
+    <div class="check1">
+      <input c type="checkbox" id="aye" name="aye">
+      <label  for="aye"  class="check"> qefefqef eqef efe qefqefqefqef qefqefrgqrg <br>  qefefqesf qef qefefqesfqesf qeghqfe </label>
+    </div>
+    <div>
+      <input class="register"   type="submit" value="register" onclick="return Validate()" required>
+    </div>
+    </form> 
+
+  <script type="text/javascript">
+    function Validate() {
+      var password = document.getElementById("password");
+      var confirmPassword = document.getElementById("txtConfirmPassword");
+      password.onchange = Validate;
+      confirmPassword.onkeyup = Validate;
+  if (password.value != confirmPassword.value) {
+      confirmPassword.setCustomValidity("Passwords do not match.");
+      
+  }
+  else {
+    confirmPassword.setCustomValidity("");
+  }
+}
+
+
+   </script>
+  </body>
+</html>

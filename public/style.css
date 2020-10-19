@@ -1,0 +1,64 @@
+.title {
+    color: white;
+    position: relative;
+    padding-bottom: 20px; ;
+    
+}
+
+.armature {
+    padding:70px;
+    padding-bottom: 50px;;
+    border: solid ;
+    border-radius: 12px;
+    text-align: center;
+    width: auto;
+    background-color: rgb(34, 37, 102);
+    display:table;
+    margin-top:150px;
+    
+    
+}
+
+.champ {
+    padding-top: 20px;
+    
+
+}
+
+.champ_input {
+
+    border: solid 1px black;
+    border-radius: 4px;
+}
+.champ_bottom {
+    padding-top: 20px;
+    padding-bottom : 60px;
+
+}
+
+.register {
+    background-color: #61b12b;
+    color: white ;
+    padding-top: 20px;
+    border: none;
+    text-decoration: none;
+    padding-left:30px;
+    margin-top:5px;
+    padding-right:30px;
+    margin-left:100px;
+    position: absolute;
+    
+}
+
+
+
+
+.check {
+
+    padding-left:1px;
+    color: white;
+    
+
+
+
+}
