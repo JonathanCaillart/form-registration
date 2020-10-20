@@ -1,0 +1,49 @@
+html {
+  height: 1000px; }
+
+body {
+  background: linear-gradient(#6f29b1, rgba(16, 170, 231, 0.582)); }
+
+.title {
+  color: white;
+  position: relative;
+  padding-bottom: 20px; }
+
+.armature {
+  padding: 70px;
+  padding-bottom: 50px;
+  border: solid;
+  border-radius: 12px;
+  text-align: center;
+  width: auto;
+  background-color: #222566;
+  display: table;
+  margin-top: 150px; }
+
+.champ {
+  padding-top: 20px; }
+
+.champ_input {
+  border: solid 1px black;
+  height: 45px;
+  border-radius: 8px;
+  width: 100%; }
+
+.champ_bottom {
+  padding-top: 20px;
+  padding-bottom: 60px; }
+
+.register {
+  background: linear-gradient(#29b13b, rgba(16, 231, 177, 0.582));
+  color: white;
+  padding-top: 15px;
+  border: none;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 100px;
+  position: absolute; }
+
+.check {
+  padding-left: 1px;
+  color: white; }

@@ -1,6 +1,23 @@
+
+$primary-color: white;
+@mixin relatif {
+    position:relative;
+
+}
+
+html {
+    height:1000px;  
+}
+
+body {
+
+    background:linear-gradient(rgb(111, 41, 177), rgba(16, 170, 231, 0.582));
+}
+
+
 .title {
-    color: white;
-    position: relative;
+    color: $primary-color;
+    @include relatif;
     padding-bottom: 20px; ;
     
 }
@@ -28,7 +45,9 @@
 .champ_input {
 
     border: solid 1px black;
-    border-radius: 4px;
+    height: 45px;
+    border-radius: 8px;
+    width: 100%;
 }
 .champ_bottom {
     padding-top: 20px;
@@ -37,13 +56,12 @@
 }
 
 .register {
-    background-color: #61b12b;
-    color: white ;
-    padding-top: 20px;
+    background:linear-gradient(rgb(41, 177, 59), rgba(16, 231, 177, 0.582));
+    color: $primary-color;
+    padding-top: 15px;
     border: none;
     text-decoration: none;
     padding-left:30px;
-    margin-top:5px;
     padding-right:30px;
     margin-left:100px;
     position: absolute;
@@ -54,11 +72,9 @@
 
 
 .check {
-
     padding-left:1px;
-    color: white;
-    
-
-
+    color: $primary-color;
 
 }
+
+

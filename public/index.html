@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
-    <link href="style.css" rel="stylesheet"></link>
+    <link href="css/style.css" rel="stylesheet"></link>
     <title>Form Registration</title>
   </head>
   <body>
@@ -13,19 +13,19 @@
       <h3 class="title">Registration Form</h3>
     </div>
     <div class="champ">
-      <input type="text"  class ="champ_input" id="firstName" firstName="firstName" placeholder="  firstName">
+      <input type="text"  class ="champ_input" id="firstName" name="firstName" placeholder="  FirstName">
     </div>
     <div class="champ"> 
-      <input type="text" id="lastName" class ="champ_input" lastName="lastName"  placeholder="  lastName">
+      <input type="text" id="lastName" class ="champ_input" name="lastName"  placeholder="  LastName">
     </div>
     <div class="champ">
-      <input type="text" id="email" class ="champ_input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="  user@domaine.com">
+      <input type="text" id="email" class ="champ_input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" placeholder="  User@domaine.com">
     </div>
     <div class="champ">
-      <input type="password" id="password" class ="champ_input" name="password" placeholder="  min 12 character" minlength="12" required >
+      <input type="password" id="password" class ="champ_input" name="password" placeholder="  Min 12 character" minlength="12" required >
     </div>
     <div class="champ_bottom">
-      <input type="password" id="txtConfirmPassword" class ="champ_input" placeholder="  confirm password" />
+      <input type="password" id="txtConfirmPassword" class ="champ_input" placeholder="  Confirm password" />
     </div>
     <div>
       <input type="checkbox" id="hey" name="hey">
